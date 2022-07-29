@@ -6,9 +6,58 @@ app.listen(3000)
 // setting it to the root app.post('/products', (req,res) => {
 app.use(express.json())
 
-app.get("/prod", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
+
+
+// POSTS
+
+
+
+app.get("/post-1", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_1.html'));
+});
+
+app.get("/post-2", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_2.html'));
+});
+
+app.get("/post-3", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_3.html'));
+});
+
+app.get("/post-4", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_4.html'));
+});
+
+app.get("/post-5", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_5.html'));
+});
+
+app.get("/post-6", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_6.html'));
+});
+
+app.get("/post-7", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_7.html'));
+});
+
+app.get("/post-8", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_8.html'));
+});
+
+app.get("/post-9", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_9.html'));
+});
+
+app.get("/post-10", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/posts/post_10.html'));
+});
+
+
+// OTHER FILES
+
 
 app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/assets/js/script.js'));
@@ -71,4 +120,7 @@ app.get('/b9', (req, res) => {
 
 app.get('/b10', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/assets/images/blog-10.png'));
+});
+app.get('/pcss', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/assets/post.css'));
 });
