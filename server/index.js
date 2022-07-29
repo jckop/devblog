@@ -122,5 +122,5 @@ app.get('/b10', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/assets/images/blog-10.png'));
 });
 app.get('/pcss', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/assets/post.css'));
+    res.sendFile(path.join(__dirname, '/public/assets/css/posts-css/post.css'));
 });
