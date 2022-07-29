@@ -1,0 +1,23 @@
+body {
+    background-color: hsl(220, 26%, 14%);
+}
+
+.about {
+    color: white;
+}
+
+.about.h1 {
+    text-align: center;
+}
+
+.about.p1 {
+    text-align: center;
+    margin-top: 1cm;
+}
+
+
+.jck {
+    font-weight: 900;
+    font-size: 0.8cm;
+    color: #61d0ff;
+}
