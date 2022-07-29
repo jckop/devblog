@@ -1,2 +1,5 @@
 src/back-end
 other
+server/node_modules
+server/Secrets
+server/package-lock.json
