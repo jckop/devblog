@@ -32,97 +32,70 @@
     - #HEADER
   -->
 
-    <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="#">
-            <img
-              src="/ico"
-              alt="Devblog's logo"
-              width="50"
-              height="50"
-              class="logo-light"
-            />
-            <img
-              src="/ico"
-              alt="Devblog's logo"
-              width="150"
-              height="40"
-              class="logo-dark"
-            />
-          </a>
+  <header>
 
-          <div class="btn-group">
-            <button class="nav-menu-btn">
-              <ion-icon name="menu-outline"></ion-icon>
-            </button>
-          </div>
+    <div class="container">
 
-          <div class="flex-wrapper">
-            <ul class="desktop-nav">
-              <li>
-                <a href="#" class="nav-link">Home</a>
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="/ico" alt="Devblog's logo" width="50" style="border-radius: 10px;" class="logo-light">
+          <img src="/ico" alt="Devblog's logo" width="50" style="border-radius: 10px;" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="/" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="/about" class="nav-link">About Me</a>
+            </li>
+
+            <li>
+              <a href="/contact" class="nav-link">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
               </li>
 
-              <li>
-                <a href="#" class="nav-link">About Me</a>
+              <li class="nav-item">
+                <a href="/about" class="nav-link">About Me</a>
               </li>
 
-              <li>
-                <a href="#" class="nav-link">Contact</a>
-              </li>
-              <li>
-                <a href="don/support.html" class="nav-link"
-                  ><ion-icon name="heart"></ion-icon
-                ></a>
+              <li class="nav-item">
+                <a href="/contact" class="nav-link">Contact</a>
               </li>
             </ul>
-          </div>
 
-          <div class="mobile-nav">
-            <button class="nav-close-btn">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="wrapper">
-              <p class="h3 nav-title">Main Menu</p>
-
-              <ul>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="#" class="nav-link">About Me</a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <p class="h3 nav-title">Topics</p>
-
-              <ul>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Database</a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Accessibility</a>
-                </li>
-
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Web Performance</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </nav>
-      </div>
-    </header>
+</header>
 
     <main>
       <!--
@@ -140,8 +113,8 @@
             </p>
 
             <div class="btn-group">
-              <a href="#" class="btn btn-primary">Contact Me</a>
-              <a href="#" class="btn btn-secondary">About Me</a>
+              <a href="/contact" class="btn btn-primary">Contact Me</a>
+              <a href="/about" class="btn btn-secondary">About Me</a>
             </div>
           </div>
 
@@ -178,7 +151,7 @@
                   <button class="blog-topic text-tiny">Database</button>
 
                   <h3>
-                    <a href="#" class="h3">
+                    <a href="/post-1" class="h3">
                       Building microservices with Dropwizard, MongoDB & Docker
                     </a>
                   </h3>
@@ -224,7 +197,7 @@
                   <button class="blog-topic text-tiny">Web Performance</button>
 
                   <h3>
-                    <a href="" class="h3"
+                    <a href="/post-2" class="h3"
                       >Fast web page loading on a $20 feature phone</a
                     >
                   </h3>
@@ -288,7 +261,7 @@
                     </div>
 
                     <div class="wrapper">
-                      <a href="#" class="h4">Jck</a>
+                      <a href="/post-3" class="h4">Jck</a>
 
                       <p class="text-sm">
                         <time datetime="2021-11-28">Nov 28, 2021</time>
@@ -362,7 +335,7 @@
                   <button class="blog-topic text-tiny">Web Performance</button>
 
                   <h3>
-                    <a href="" class="h3"
+                    <a href="/post-5" class="h3"
                       >Adaptive Loading - Improving Web Performance on low-end
                       devices</a
                     >
@@ -411,7 +384,7 @@
                   <button class="blog-topic text-tiny">Accessibility</button>
 
                   <h3>
-                    <a href="" class="h3"
+                    <a href="/post-6" class="h3"
                       >Don't Develop Just for Yourself - A Developer's Checklist
                       to Accessibility</a
                     >
@@ -505,7 +478,7 @@
                   <button class="blog-topic text-tiny">Web Performance</button>
 
                   <h3>
-                    <a href="" class="h3"
+                    <a href="/post-8" class="h3"
                       >Monitoring Performance with the PageSpeed Insights API</a
                     >
                   </h3>
@@ -570,7 +543,7 @@
                     </div>
 
                     <div class="wrapper">
-                      <a href="#" class="h4">Jck</a>
+                      <a href="/post-9" class="h4">Jck</a>
 
                       <p class="text-sm">
                         <time datetime="2021-09-13">Sep 13, 2021</time>
@@ -597,7 +570,7 @@
                   <button class="blog-topic text-tiny">Database</button>
 
                   <h3>
-                    <a href="" class="h3"
+                    <a href="/post-1" class="h3"
                       >How to connect a React frontend with a NodeJS/Express
                       backend</a
                     >

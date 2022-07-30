@@ -8,9 +8,14 @@ app.use(express.json())
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
+    console.log(`Successfully Sent ${req.originalUrl} to ROOT app`)
 });
-
-
+app.get("/about", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/other-pages/about/about.html'));
+});
+app.get("/contact", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/other-pages/contact/contact.html'));
+});
 // POSTS
 
 
@@ -71,8 +76,13 @@ app.get('/ico', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/assets/images/favicon.ico'));
 })
 
+app.get('/acss', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/other-pages/about/about.css'));
+});
 
-
+app.get('/ccss', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/other-pages/contact/contact.css'));
+});
 
 
 
