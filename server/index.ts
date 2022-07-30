@@ -1,5 +1,5 @@
 import express from 'express'
-import http from 'node:http'
+import http, { request } from 'node:http'
 import path from 'node:path'
 const port = 3000
 const app = express()
@@ -10,6 +10,7 @@ app.listen(port, () => {
 // send the file in ../public/index.html
 // setting it to the root app.post('/products', (req,res) => {
 app.use(express.json());
+
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
     console.log(`Successfully Sent ${req.originalUrl} to ROOT app`)
