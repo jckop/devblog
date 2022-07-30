@@ -3,3 +3,6 @@ other
 server/node_modules
 server/Secrets
 server/package-lock.json
+*/.DS_Store
+server/.DS_Store
+server/public/.DS_Store
