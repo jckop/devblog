@@ -1,4 +1,5 @@
 import express from 'express'
+import http from 'node:http'
 import path from 'node:path'
 const port = 3000
 const app = express()
@@ -13,6 +14,7 @@ app.use(express.json())
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
     console.log(`Successfully Sent ${req.originalUrl} to ROOT app`)
+
 });
 app.get("/about", (req, res) => {
     res.sendFile(path.join(__dirname, '/public/other-pages/about/about.html'));
