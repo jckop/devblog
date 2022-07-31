@@ -2,7 +2,6 @@
 import express from 'express'
 import http, { request } from 'node:http'
 import path from 'node:path'
-import mongoose from 'mongoose'
 // Variables
 const port = 3000
 const app = express()
@@ -18,14 +17,21 @@ app.listen(port, () => {
 app.use(express.json());
 
 // Connecting to mongoDB
-mongoose.connect(Mongouri, {
-}).then(() => {
-    console.log('Database Connected');
-}).catch((err) => {
-    console.log('An Error Has Occured');
-    console.log(err);
-});
-// MAIN PAGES
+// Connect using a MongoClient instance
+const MongoClient = require('mongodb').MongoClient;
+const test = require('assert');
+// Connection url
+const url = 'mongodb+srv://back_end_1:nwePqCul7PvKTyFt@bot.it8opsm.mongodb.net/?retryWrites=true&w=majority';
+// Database Name
+const dbName = 'Blog-back-end';
+// Connect using MongoClient
+const mongoClient = new MongoClient(url);
+mongoClient.connect(function(err, client) {
+  const db = client.db(dbName);
+  console.log(`Successfully connected to MongoDB: ${dbName}`);
+  client.close();
+})
+// MAIN PAGES 
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
