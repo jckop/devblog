@@ -5,3 +5,4 @@ server/package-lock.json
 server/.DS_Store
 server/public/.DS_Store
 server-host/
+server/Secrets
