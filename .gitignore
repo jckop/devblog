@@ -8,4 +8,4 @@ server-host/
 server/Secrets
 server/admin
 .DS_Store
-n
+.log
