@@ -26,7 +26,7 @@ app.use(express.json());
 const MongoClient = require("mongodb").MongoClient;
 
 // Connection url
-const { url } = require('./Secrets/secret.json');
+const { url } = require("./Secrets/secret.json");
 
 // Database Name
 const dbName = "Blog-back-end";
@@ -37,7 +37,6 @@ mongoClient.connect(function (err, client) {
   console.log(`Successfully connected to MongoDB: ${dbName}`);
   client.close();
 });
-
 
 // MAIN PAGES
 
@@ -122,6 +121,9 @@ app.get("/ccss", (req, res) => {
 });
 app.get("/pcss", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/assets/css/posts-css/post.css"));
+});
+app.get("/cjs", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/other-pages/contact/contact.js"));
 });
 
 // BLOG POST IMAGES
