@@ -9,3 +9,4 @@ server/Secrets
 server/admin
 .DS_Store
 .log
+*.DS_Store
