@@ -21,3 +21,9 @@ body {
     font-size: 0.8cm;
     color: #61d0ff;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

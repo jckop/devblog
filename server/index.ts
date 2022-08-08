@@ -10,22 +10,22 @@ import fs from "fs";
 let port = 8000;
 let app = express();
 
-// Request Variables
+//  Request Variables
 
-var filepath = `./data/Requests/request_save.json`;
-import fileContent from "./data/Contents/request_save";
+// var filepath = `./data/Requests/request_save.json`;
+// import fileContent from "./data/Contents/request_save";
 
-fs.writeFile(filepath, JSON.stringify(fileContent, null, 2), (err) => {
-	if (err) throw err;
+// fs.writeFile(filepath, JSON.stringify(fileContent, null, 2), (err) => {
+// 	if (err) throw err;
 
-	console.log("The file was succesfully saved!");
-});
+// 	console.log("The file was succesfully saved!");
+// });
 
 // Listening on port 3000
 
-app.get("/req", (req, res) => {
-	res.send(JSON.stringify(fileContent, null, 2));
-});
+// app.get("/req", (req, res) => {
+// 	res.send(JSON.stringify(fileContent, null, 2));
+// });
 
 app.listen(port, () => {
 	console.log(
