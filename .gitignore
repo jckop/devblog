@@ -13,3 +13,5 @@ server/admin
 log
 *.DS_Store
 .vscode
+server/run.sh
+*.sh

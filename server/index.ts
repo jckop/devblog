@@ -7,7 +7,7 @@ import path from "node:path";
 import fs from "fs";
 // Variables
 
-let port = 9000;
+let port = 8000;
 let app = express();
 
 // Request Variables
