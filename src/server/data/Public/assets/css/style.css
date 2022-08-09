@@ -785,7 +785,7 @@ footer .wrapper {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    height: 200px; 
+    height: 200px;  /* Jck removing bg pattern */
     background-size: contain;
     opacity: 0.2;
   }
