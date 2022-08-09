@@ -785,8 +785,7 @@ footer .wrapper {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    height: 200px;
-    background: url(../images/pattern.png);
+    height: 200px; 
     background-size: contain;
     opacity: 0.2;
   }
