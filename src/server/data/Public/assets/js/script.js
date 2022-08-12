@@ -8,8 +8,8 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
     event.preventDefault()
 
-    localStorage.setItem('email', input.value);
-    const email = localStorage.getItem('email');
+    // localStorage.setItem('email', input.value);
+    // const email = localStorage.getItem('email');
 })
 
 // navToggle function

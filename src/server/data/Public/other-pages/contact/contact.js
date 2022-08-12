@@ -1,6 +1,10 @@
-const form = document.querySelector('form');
+let sender = document.querySelector('form')
+let fielda = document.getElementById('fielda');
+let fieldb = document.getElementById('fieldb');
+let fieldc = document.getElementById('fieldc');
 
-form.addEventListener('submit', (event) => {
+sender.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(`test`)
+    localStorage.setItem("msg", [fieldb.value + "\n" +  fielda.value + "\n\n" + fieldc.value + "\n"])
+    let values = localStorage.getItem("msg")
 })

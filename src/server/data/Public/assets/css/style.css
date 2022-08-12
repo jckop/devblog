@@ -626,7 +626,6 @@ footer .wrapper {
     color: var(--foreground-secondary);
     font-size: var(--fs-4);
     display: -webkit-box;
-    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;

@@ -1,0 +1,42 @@
+.light-theme {
+    --gradient-color: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    --background-primary: hsl(218, 23%, 23%);
+    --background-secondary: hsl(220, 26%, 14%);
+  
+    --action-primary: hsl(216, 15%, 52%);
+    --action-secondary: hsl(218, 23%, 23%);
+  
+    --foreground-primary: hsl(210, 38%, 95%);
+    --foreground-secondary: hsl(211, 25%, 84%);
+    --foreground-tertiary: hsl(214, 20%, 69%);
+  
+    --accent: hsl(229, 76%, 66%);
+  
+}
+
+body {
+  background-color: var(--background-secondary) !important;
+}
+
+.h1.top-text {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+}
+
+.top-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background: var(--action-primary);
+  width: 5px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.blog-card {
+  position: relative;
+  top: 200px;
+  color: white;
+}

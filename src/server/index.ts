@@ -5,9 +5,10 @@ import { assert } from "node:console";
 import http, { request } from "node:http";
 import path from "node:path";
 import fs from "fs";
+import connect from './MongoDB/connect';
 // Variables
 
-let port = 3000;
+let port = 2500;
 let app = express();
 
 //  Request Variables
@@ -37,26 +38,9 @@ app.listen(port, () => {
 
 app.use(express.json());
 
-// Connect using a MongoClient instance
+// connecting
+connect()
 
-const MongoClient = require("mongodb").MongoClient;
-
-// Connection url
-
-const { url } = require("./Data/Secrets/secret.json");
-
-// Database Name
-
-const dbName = "Blog-back-end";
-
-// Connect using MongoClient
-
-const mongoClient = new MongoClient(url);
-mongoClient.connect(function (err, client) {
-	const db = client.db(dbName);
-	console.log(`Successfully connected to MongoDB: ${dbName}`);
-	client.close();
-});
 
 // MAIN PAGES
 
@@ -74,6 +58,15 @@ app.get("/contact", (req, res) => {
 		path.join(__dirname, "/data/Public/other-pages/contact/contact.html")
 	);
 });
+
+
+// TOPICS
+
+app.get("/projects", (req, res) => {
+	res.sendFile(
+		path.join(__dirname, "/data/Public/Topics/Projects/projects.html")
+	)
+})
 
 // POSTS
 
@@ -119,6 +112,9 @@ app.get("/post-10", (req, res) => {
 
 // OTHER FILES
 
+app.get('/prcss', (req, res) => {
+	res.sendFile(path.join(__dirname, "/data/Public/Topics/Projects/projects.css"))
+})
 app.get("/bg", (req, res) => {
 	res.sendFile(path.join(__dirname, "/data/Public/other-pages/contact/bg.jpg"));
 });
