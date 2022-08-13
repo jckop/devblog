@@ -1,5 +1,5 @@
 let connect = function() {
-    const { url } = require("../data/Secrets/secret.json");
+    const { url } = require("../Secrets/secret.json");
 
     const  mongoose = require('mongoose');
 

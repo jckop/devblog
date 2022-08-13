@@ -4,7 +4,7 @@ src/server/package-lock.json
 src/server/.DS_Store
 src/server/public/.DS_Store
 src/server-host/
-src/server/data/Secrets
+src/server/Secrets
 src/server/admin
 .DS_Store
 *.log
