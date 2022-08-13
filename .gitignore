@@ -7,12 +7,10 @@ src/server-host/
 src/server/data/Secrets
 src/server/admin
 .DS_Store
-.log
 *.log
 log
 *.DS_Store
 .vscode
-src/server/run.sh
 *.sh
 src/portfollio/server/node_modules
 src/portfollio/server/package-lock.json
