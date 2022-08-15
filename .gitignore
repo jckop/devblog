@@ -14,3 +14,4 @@ log
 *.sh
 src/portfollio/server/node_modules
 src/portfollio/server/package-lock.json
+src/server/pages

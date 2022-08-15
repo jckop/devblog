@@ -1,3 +1,4 @@
+#!/usr/local/bin/run
 // Imports
 
 import express from "express";
@@ -13,14 +14,14 @@ let app = express();
 
 //  Request Variables
 
-var filepath = `./Requests/request_save.json`;
+// var filepath = `./Requests/request_save.json`;
 import fileContent from "./data/Contents/request_save";
 
-fs.writeFile(filepath, JSON.stringify(fileContent, null, 4), (err) => {
-	if (err) throw err;
+// fs.writeFile(filepath, JSON.stringify(fileContent, null, 4), (err) => {
+// 	if (err) throw err;
 
-	console.log("The file was succesfully saved!");
-});
+// 	console.log("The file was succesfully saved!");
+// });
 
 app.get("/req", (req, res) => {
 	res.send(JSON.stringify(fileContent, null, 4));
@@ -31,10 +32,6 @@ app.listen(port, () => {
 		`Successfully launched application to http://localhost:${port} while using HTPP`
 	);
 });
-
-// Using express JSON format for testing purposes
-
-app.use(express.json());
 
 // connecting
 connect()
@@ -191,3 +188,11 @@ app.get("/b9", (req, res) => {
 app.get("/b10", (req, res) => {
 	res.sendFile(path.join(__dirname, "/data/Public/assets/images/blog-10.png"));
 });
+
+app.get('/4css', (req, res) => {
+	res.sendFile(path.join(__dirname, "/data/Public/other-pages/404/404.css"))
+})
+
+app.use((req, res, next) => {
+	res.status(404).sendFile(path.join(__dirname, "/data/Public/other-pages/404/404.html"))
+})
