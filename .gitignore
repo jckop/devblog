@@ -1,17 +1,32 @@
+# Hello
 src/server/node_modules
 src/server/package-lock.json
-*/.DS_Store
-src/server/.DS_Store
-src/server/public/.DS_Store
-src/server-host/
+
+# Secrets
+
 src/server/Secrets
-src/server/admin
-.DS_Store
+
+# Logs
+
 *.log
 log
+# Ds store
+
 *.DS_Store
+
+# VScode launch settings
+
 .vscode
+
+# Shell scripts
+
 *.sh
+
+# portfollio
+
 src/portfollio/server/node_modules
 src/portfollio/server/package-lock.json
+
+# unfinished idea of moving all the app.get pages from the index.ts file
+
 src/server/pages
