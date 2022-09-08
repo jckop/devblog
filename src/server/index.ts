@@ -13,7 +13,7 @@ function place(place) {
 }
  
 
-let port = 1000;
+let port = 1100;
 let app = express();
 
 //  Request Variables
@@ -69,83 +69,83 @@ app.get("/projects", (req, res) => {
 
 // POSTS
 
-app.get("/post-1", (req, res) => {
+app.get("/posts/post-1", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_1.html"));
 });
 
-app.get("/post-2", (req, res) => {
+app.get("/posts/post-2", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_2.html"));
 });
 
-app.get("/post-3", (req, res) => {
+app.get("/posts/post-3", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_3.html"));
 });
 
-app.get("/post-4", (req, res) => {
+app.get("/posts/post-4", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_4.html"));
 });
 
-app.get("/post-5", (req, res) => {
+app.get("/posts/post-5", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_5.html"));
 });
 
-app.get("/post-6", (req, res) => {
+app.get("/posts/post-6", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_6.html"));
 });
 
-app.get("/post-7", (req, res) => {
+app.get("/posts/post-7", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_7.html"));
 });
 
-app.get("/post-8", (req, res) => {
+app.get("/posts/post-8", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_8.html"));
 });
 
-app.get("/post-9", (req, res) => {
+app.get("/posts/post-9", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_9.html"));
 });
 
-app.get("/post-10", (req, res) => {
+app.get("/posts/post-10", (req, res) => {
 	res.sendFile(place("/data/Public/posts/post_10.html"));
 });
 
 // OTHER FILES
 
-app.get('/prcss', (req, res) => {
+app.get('/assets/css/prcss', (req, res) => {
 	res.sendFile(place("/data/Public/Topics/Projects/projects.css"))
 })
-app.get("/bg", (req, res) => {
+app.get("/assets/images//bg", (req, res) => {
 	res.sendFile(place("/data/Public/other-pages/contact/bg.jpg"));
 });
-app.get("/js", (req, res) => {
+app.get("/assets/js/js", (req, res) => {
 	res.sendFile(place("/data/Public/assets/js/script.js"));
 });
 
-app.get("/css", (req, res) => {
+app.get("/assets/css/css", (req, res) => {
 	res.sendFile(place("/data/Public/assets/css/style.css"));
 });
 
-app.get("/ico", (req, res) => {
+app.get("/assets/images/ico", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/favicon.ico"));
 });
 
-app.get("/acss", (req, res) => {
+app.get("/assets/css/acss", (req, res) => {
 	res.sendFile(
 		place("/data/Public/other-pages/about/about.css")
 	);
 });
 
-app.get("/ccss", (req, res) => {
+app.get("/assets/css/ccss", (req, res) => {
 	res.sendFile(
 		place("/data/Public/other-pages/contact/contact.css")
 	);
 });
-app.get("/pcss", (req, res) => {
+app.get("/assets/css/pcss", (req, res) => {
 	res.sendFile(
 		place("/data/Public/assets/css/posts-css/post.css")
 	);
 });
-app.get("/cjs", (req, res) => {
+app.get("/assets/js/cjs", (req, res) => {
 	res.sendFile(
 		place("/data/Public/other-pages/contact/contact.js")
 	);
@@ -153,47 +153,47 @@ app.get("/cjs", (req, res) => {
 
 // BLOG POST IMAGES
 
-app.get("/b1", (req, res) => {
+app.get("/assets/images/posts/b1", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-1.png"));
 });
 
-app.get("/b2", (req, res) => {
+app.get("/assets/images/posts/b2", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-2.png"));
 });
 
-app.get("/b3", (req, res) => {
+app.get("/assets/images/posts/b3", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-3.png"));
 });
 
-app.get("/b4", (req, res) => {
+app.get("/assets/images/posts/b4", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-4.png"));
 });
 
-app.get("/b5", (req, res) => {
+app.get("/assets/images/posts/b5", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-5.png"));
 });
 
-app.get("/b6", (req, res) => {
+app.get("/assets/images/posts/b6", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-6.png"));
 });
 
-app.get("/b7", (req, res) => {
+app.get("/assets/images/posts/b7", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-7.png"));
 });
 
-app.get("/b8", (req, res) => {
+app.get("/assets/images/posts/b8", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-8.png"));
 });
 
-app.get("/b9", (req, res) => {
+app.get("/assets/images/posts/b9", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-9.png"));
 });
 
-app.get("/b10", (req, res) => {
+app.get("/assets/images/posts/b10", (req, res) => {
 	res.sendFile(place("/data/Public/assets/images/blog-10.png"));
 });
 
-app.get('/4css', (req, res) => {
+app.get('/assets/css/4css', (req, res) => {
 	res.sendFile(place("/data/Public/other-pages/404/404.css"));
 })
 
